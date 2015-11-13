@@ -51,7 +51,6 @@ Note the trailing / on the URL -- it is not optional!
   def access_key, do: System.get_env("AWS_ACCESS_KEY")
   def now do
     {:ok, date} = Timex.Date.now|> Timex.DateFormat.format("{ISO}")
-    IO.puts "date was: " <> inspect date
     date
   end
 
